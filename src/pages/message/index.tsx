@@ -12,7 +12,7 @@ const MessagePage: React.FC = () => {
   const mockMessages = [
     { 
       id: '1', 
-      avatar: '/assets/images/default.jpg', 
+      avatar: '/assets/images/placeholder.svg', 
       sender: '张三', 
       content: '你好，最近怎么样？', 
       time: '10:30',
@@ -20,7 +20,7 @@ const MessagePage: React.FC = () => {
     },
     { 
       id: '2', 
-      avatar: '/assets/images/default.jpg', 
+      avatar: '/assets/images/placeholder.svg', 
       sender: '李四', 
       content: '明天有空吗？一起吃饭', 
       time: '昨天',
@@ -28,7 +28,7 @@ const MessagePage: React.FC = () => {
     },
     { 
       id: '3', 
-      avatar: '/assets/images/default.jpg', 
+      avatar: '/assets/images/placeholder.svg', 
       sender: '王五', 
       content: '项目进度怎么样了？', 
       time: '周一',

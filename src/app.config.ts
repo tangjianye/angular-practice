@@ -19,26 +19,26 @@ export default {
       {
         pagePath: 'pages/dynamic/index',
         text: '动态',
-        iconPath: 'assets/images/default.jpg',
-        selectedIconPath: 'assets/images/default.jpg'
+        iconPath: 'assets/images/dynamic_tab_normal.png',
+        selectedIconPath: 'assets/images/dynamic_tab_selected.png'
       },
       {
         pagePath: 'pages/friends/index',
         text: '好友',
-        iconPath: 'assets/images/default.jpg',
-        selectedIconPath: 'assets/images/default.jpg'
+        iconPath: 'assets/images/friends_tab_normal.png',
+        selectedIconPath: 'assets/images/friends_tab_selected.png'
       },
       {
         pagePath: 'pages/message/index',
         text: '消息',
-        iconPath: 'assets/images/default.jpg',
-        selectedIconPath: 'assets/images/default.jpg'
+        iconPath: 'assets/images/message_tab_normal.png',
+        selectedIconPath: 'assets/images/message_tab_selected.png'
       },
       {
         pagePath: 'pages/profile/index',
         text: '我的',
-        iconPath: 'assets/images/default.jpg',
-        selectedIconPath: 'assets/images/default.jpg'
+        iconPath: 'assets/images/profile_tab_normal.png',
+        selectedIconPath: 'assets/images/profile_tab_selected.png'
       }
     ]
   }

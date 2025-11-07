@@ -10,9 +10,9 @@ const FriendsPage: React.FC = () => {
   // 模拟好友数据
   // 实际应用中会从store或API获取
   const mockFriends = [
-    { id: '1', name: '张三', avatar: '/assets/images/default.jpg', status: 'online' },
-    { id: '2', name: '李四', avatar: '/assets/images/default.jpg', status: 'offline' },
-    { id: '3', name: '王五', avatar: '/assets/images/default.jpg', status: 'online' },
+    { id: '1', name: '张三', avatar: '/assets/images/placeholder.svg', status: 'online' },
+  { id: '2', name: '李四', avatar: '/assets/images/placeholder.svg', status: 'offline' },
+  { id: '3', name: '王五', avatar: '/assets/images/placeholder.svg', status: 'online' },
   ];
   
   return (

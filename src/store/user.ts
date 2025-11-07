@@ -11,7 +11,7 @@ interface UserInfo {
 const userStore = observable({
   // 用户信息，初始使用默认值
   userInfo: {
-    avatar: '/assets/images/default.jpg',
+    avatar: '/assets/images/placeholder.svg',
     nickname: '用户昵称',
     signature: '这个人很懒，什么都没有留下...'
   } as UserInfo,
@@ -34,7 +34,7 @@ const userStore = observable({
     this.isLoggedIn = false;
     // 重置为默认用户信息
     this.userInfo = {
-      avatar: '/assets/images/default.jpg',
+      avatar: '/assets/images/placeholder.svg',
       nickname: '用户昵称',
       signature: '这个人很懒，什么都没有留下...'
     };
