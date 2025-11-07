@@ -1,11 +1,45 @@
-export default defineAppConfig({
+export default {
   pages: [
-    'pages/index/index'
+    'pages/dynamic/index',
+    'pages/friends/index',
+    'pages/message/index',
+    'pages/profile/index'
   ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
+    navigationBarTitleText: '小程序',
     navigationBarTextStyle: 'black'
+  },
+  tabBar: {
+    color: '#999999',
+    selectedColor: '#1AAD19',
+    backgroundColor: '#ffffff',
+    list: [
+      {
+        pagePath: 'pages/dynamic/index',
+        text: '动态',
+        iconPath: 'assets/images/default.jpg',
+        selectedIconPath: 'assets/images/default.jpg'
+      },
+      {
+        pagePath: 'pages/friends/index',
+        text: '好友',
+        iconPath: 'assets/images/default.jpg',
+        selectedIconPath: 'assets/images/default.jpg'
+      },
+      {
+        pagePath: 'pages/message/index',
+        text: '消息',
+        iconPath: 'assets/images/default.jpg',
+        selectedIconPath: 'assets/images/default.jpg'
+      },
+      {
+        pagePath: 'pages/profile/index',
+        text: '我的',
+        iconPath: 'assets/images/default.jpg',
+        selectedIconPath: 'assets/images/default.jpg'
+      }
+    ]
   }
-})
+}
