@@ -1,0 +1,191 @@
+// 全局样式文件
+// 定义应用的通用样式、重置样式和变量
+
+// 导入颜色变量
+@import './variables';
+
+// 重置样式
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// 基础标签样式
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $text-primary;
+  background-color: $bg-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 文本选择样式
+::selection {
+  background-color: $primary-color;
+  color: white;
+}
+
+// 链接样式
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// 输入框样式
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+// 按钮样式重置
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+// 图片样式
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// 列表样式
+ul, ol {
+  list-style: none;
+}
+
+// 通用布局类
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// 通用间距类
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
+
+.ml-8 { margin-left: 8px; }
+.ml-16 { margin-left: 16px; }
+.ml-24 { margin-left: 24px; }
+.ml-32 { margin-left: 32px; }
+
+.mr-8 { margin-right: 8px; }
+.mr-16 { margin-right: 16px; }
+.mr-24 { margin-right: 24px; }
+.mr-32 { margin-right: 32px; }
+
+.p-8 { padding: 8px; }
+.p-16 { padding: 16px; }
+.p-24 { padding: 24px; }
+.p-32 { padding: 32px; }
+
+// 通用文本类
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-disabled { color: $text-disabled; }
+.text-error { color: $error-color; }
+.text-success { color: $success-color; }
+.text-warning { color: $warning-color; }
+
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+// 通用背景类
+.bg-primary { background-color: $bg-primary; }
+.bg-secondary { background-color: $bg-secondary; }
+.bg-white { background-color: white; }
+
+// 通用边框类
+.border { border: 1px solid $border-color; }
+.border-radius { border-radius: 4px; }
+.border-radius-lg { border-radius: 8px; }
+.border-radius-full { border-radius: 9999px; }
+
+// 通用阴影类
+.shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+.shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+
+// 通用动画类
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+// 隐藏类
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+
+// Flex布局类
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-1 { flex: 1; }
+.flex-wrap { flex-wrap: wrap; }
+
+// 安全区域适配（iOS）
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+// 响应式断点（基于微信小程序设计稿750rpx）
+@media screen and (min-width: 750px) {
+  .container {
+    padding: 0 24px;
+  }
+}
