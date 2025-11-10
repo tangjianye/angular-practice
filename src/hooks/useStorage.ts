@@ -83,16 +83,8 @@ function useStorage<T>(
 
   // 监听存储变化（跨页面更新）
   useEffect(() => {
-    // 在小程序中，我们可以使用事件监听来处理存储变化
-    // 这里仅作为示例，实际项目中可能需要根据具体需求实现
-    const handleStorageChange = (res: any) => {
-      if (res.key === key && isMountedRef.current) {
-        setValue(res.newValue !== undefined ? res.newValue : initialValue);
-      }
-    };
-
     // 注意：小程序不直接支持storage事件监听
-    // 这里的代码仅作为示例，实际实现可能需要其他方式
+    // 此注释保留作为实现指导，实际项目中可能需要其他方式处理跨页面数据同步
     
     return () => {
       // 清理函数

@@ -75,8 +75,14 @@ export const clearStorage = async (): Promise<void> => {
 export const hasStorage = async (key: string): Promise<boolean> => {
   try {
     const info = await Taro.getStorageInfo();
-    // 根据Taro API，返回值中包含keys数组
-    return Array.isArray(info.keys) && info.keys.includes(key);
+    // 使用更安全的类型检查方式
+    const unknownInfo = info as unknown;
+    // 检查是否具有keys属性并且是数组
+    if (typeof unknownInfo === 'object' && unknownInfo !== null && 'keys' in unknownInfo) {
+      const keys = (unknownInfo as any).keys;
+      return Array.isArray(keys) && keys.includes(key);
+    }
+    return false;
   } catch (error) {
     console.error('检查键是否存在失败:', error);
     return false;

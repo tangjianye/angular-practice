@@ -65,7 +65,7 @@ const Avatar: React.FC<AvatarProps> = ({
       return defaultAvatar;
     }
     // 默认显示用户图标
-    return <View className="custom-avatar__placeholder">用户</View>;
+    return <View className='custom-avatar__placeholder'>用户</View>;
   };
 
   // 渲染内容
@@ -73,9 +73,9 @@ const Avatar: React.FC<AvatarProps> = ({
     if (src) {
       return (
         <Image
-          className="custom-avatar__image"
+          className='custom-avatar__image'
           src={src}
-          mode="aspectFill"
+          mode='aspectFill'
           onError={renderDefaultAvatar}
         />
       );

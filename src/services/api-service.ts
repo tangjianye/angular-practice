@@ -1,9 +1,9 @@
 import Taro from '@tarojs/taro';
-import { API_BASE_URL, API_TIMEOUT, API_STATUS, API_ENDPOINTS, HTTP_METHOD, CONTENT_TYPE } from '../constants/api-constants';
+import { API_BASE_URL, API_TIMEOUT, API_STATUS, HTTP_METHOD, CONTENT_TYPE } from '../constants/api-constants';
 
 // API配置
 // 定义支持的HTTP方法类型
-type HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
+type HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
 
 interface RequestOptions {
   url: string;
@@ -42,7 +42,7 @@ class ApiService {
       const requestParams = {
         url: `${API_BASE_URL}${url}`,
         // 类型断言确保与Taro.request兼容
-        method: method as 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH',
+        method: method as 'GET' | 'POST' | 'PUT' | 'DELETE',
         data,
         header: {
           'Content-Type': CONTENT_TYPE.JSON,
@@ -95,7 +95,7 @@ class ApiService {
   async get<T = any>(url: string, params?: any): Promise<ApiResponse<T>> {
     return this.request<T>({
       url,
-      method: HTTP_METHOD.GET,
+      method: HTTP_METHOD.GET as HttpMethod,
       data: params
     });
   }
@@ -109,7 +109,7 @@ class ApiService {
   async post<T = any>(url: string, data?: any): Promise<ApiResponse<T>> {
     return this.request<T>({
       url,
-      method: HTTP_METHOD.POST,
+      method: HTTP_METHOD.POST as HttpMethod,
       data
     });
   }
@@ -123,7 +123,7 @@ class ApiService {
   async put<T = any>(url: string, data?: any): Promise<ApiResponse<T>> {
     return this.request<T>({
       url,
-      method: HTTP_METHOD.PUT,
+      method: HTTP_METHOD.PUT as HttpMethod,
       data
     });
   }
@@ -137,7 +137,7 @@ class ApiService {
   async delete<T = any>(url: string, params?: any): Promise<ApiResponse<T>> {
     return this.request<T>({
       url,
-      method: HTTP_METHOD.DELETE,
+      method: HTTP_METHOD.DELETE as HttpMethod,
       data: params
     });
   }
