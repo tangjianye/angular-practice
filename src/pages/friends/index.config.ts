@@ -1,4 +1,4 @@
-export default {
+export default definePageConfig({
   navigationBarTitleText: '好友',
   enableShareAppMessage: false
-};
+})
