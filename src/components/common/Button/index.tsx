@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button as TaroButton, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import './style.scss';
+import './index.scss';
 
 // 按钮类型
 export type ButtonType = 'primary' | 'default' | 'danger' | 'success' | 'warning';

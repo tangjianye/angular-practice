@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '@tarojs/components';
-import './style.scss';
+import './index.scss';
 
 // 卡片属性接口
 interface CardProps {

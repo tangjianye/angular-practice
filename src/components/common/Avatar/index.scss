@@ -10,23 +10,23 @@
 
   // 尺寸样式
   &--small {
-    width: 32px;
-    height: 32px;
+    width: 32rpx;
+    height: 32rpx;
   }
 
   &--medium {
-    width: 48px;
-    height: 48px;
+    width: 48rpx;
+    height: 48rpx;
   }
 
   &--large {
-    width: 64px;
-    height: 64px;
+    width: 64rpx;
+    height: 64rpx;
   }
 
   &--xlarge {
-    width: 80px;
-    height: 80px;
+    width: 80rpx;
+    height: 80rpx;
   }
 
   // 形状样式
@@ -35,13 +35,13 @@
   }
 
   &--square {
-    border-radius: 4px;
+    border-radius: 4rpx;
   }
 
   // 边框样式
   &--bordered {
-    border: 2px solid #FFFFFF;
-    box-shadow: 0 0 0 1px #E8E8E8;
+    border: 2rpx solid #FFFFFF;
+    box-shadow: 0 0 0 1rpx #E8E8E8;
   }
 
   // 可点击样式
@@ -63,7 +63,7 @@
 
   // 占位符样式
   &__placeholder {
-    font-size: 14px;
+    font-size: 14rpx;
     font-weight: 500;
     color: #999999;
     text-align: center;
@@ -71,19 +71,19 @@
 
     // 根据尺寸调整字体大小
     .custom-avatar--small & {
-      font-size: 12px;
+      font-size: 12rpx;
     }
 
     .custom-avatar--medium & {
-      font-size: 16px;
+      font-size: 16rpx;
     }
 
     .custom-avatar--large & {
-      font-size: 20px;
+      font-size: 20rpx;
     }
 
     .custom-avatar--xlarge & {
-      font-size: 24px;
+      font-size: 24rpx;
     }
   }
 }

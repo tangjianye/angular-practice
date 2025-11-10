@@ -7,33 +7,33 @@
 
   // 边框样式
   &--bordered {
-    border: 1px solid #E8E8E8;
+    border: 1rpx solid #E8E8E8;
   }
 
   // 阴影样式
   &--shadow {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
   }
 
   // 圆角样式
   &--rounded {
-    border-radius: 8px;
+    border-radius: 8rpx;
   }
 
   // 头部样式
   &__header {
-    padding: 16px 16px 0;
+    padding: 16rpx 16rpx 0;
     box-sizing: border-box;
 
     &__title {
-      font-size: 18px;
+      font-size: 18rpx;
       font-weight: 600;
       color: #333333;
-      margin-bottom: 4px;
+      margin-bottom: 4rpx;
     }
 
     &__subtitle {
-      font-size: 14px;
+      font-size: 14rpx;
       color: #666666;
       line-height: 1.5;
     }
@@ -41,29 +41,29 @@
 
   // 内容区域样式
   &__body {
-    padding: 16px;
+    padding: 16rpx;
     box-sizing: border-box;
     line-height: 1.6;
     color: #333333;
 
     // 当有头部时，调整内容区域的上内边距
     .custom-card__header + & {
-      padding-top: 12px;
+      padding-top: 12rpx;
     }
   }
 
   // 底部样式
   &__footer {
-    padding: 0 16px 16px;
+    padding: 0 16rpx 16rpx;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
     // 分隔线
-    border-top: 1px solid #F0F0F0;
-    margin-top: 12px;
-    padding-top: 12px;
+    border-top: 1rpx solid #F0F0F0;
+    margin-top: 12rpx;
+    padding-top: 12rpx;
   }
 
   // 可点击样式
@@ -75,26 +75,26 @@
 }
 
 // 响应式设计
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768rpx) {
   .custom-card {
     &__header {
-      padding: 12px 12px 0;
+      padding: 12rpx 12rpx 0;
 
       &__title {
-        font-size: 16px;
+        font-size: 16rpx;
       }
 
       &__subtitle {
-        font-size: 13px;
+        font-size: 13rpx;
       }
     }
 
     &__body {
-      padding: 12px;
+      padding: 12rpx;
     }
 
     &__footer {
-      padding: 0 12px 12px;
+      padding: 0 12rpx 12rpx;
     }
   }
 }

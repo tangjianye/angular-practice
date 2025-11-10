@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image } from '@tarojs/components';
-import './style.scss';
+import './index.scss';
 
 // 头像尺寸
 export type AvatarSize = 'small' | 'medium' | 'large' | 'xlarge';
